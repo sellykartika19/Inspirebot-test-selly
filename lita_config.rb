@@ -32,7 +32,6 @@ Lita.configure do |config|
   # config.handlers.some_handler.some_config_key = "value"
 
   # heroku uses a RACK_ENV of 'production' by default
-  es a RACK_ENV of 'production' by default
   if ENV['RACK_ENV'] == 'production'
     config.robot.adapter = :slack
     config.redis[:url] = ENV.fetch('REDIS_URL')
